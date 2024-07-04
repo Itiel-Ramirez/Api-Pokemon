@@ -10,11 +10,12 @@
     <div class="container">
         <h1>Api Pokemon</h1>
         <input type="text" id="pokemonInput" placeholder="Ingresa nombre del pokemon" class="pokemon-input">
-        <br>
+        <br><br>
         <button type="button" onclick="fetchPokemon()" class="pokemon-button">Buscar pokemon</button>
-        <div id="pokemonData" class="pokemon-data"></div>
-        <button type="button" onclick="openModal()" class="pokemon-button">Mas informacion</button>
-
+        <button type="button" onclick="fetchRandomPokemon()" class="pokemon-button">Buscar Pokémon Aleatorio</button>
+        <div id="pokemonData" class="pokemon-data">Esperando Pokemon...</div>
+        <button onclick="openModal()" class="pokemon-button">Mas informacion</button>
+    </div>
   <script src="controller/main.js"></script>
 </body>
 </html>
